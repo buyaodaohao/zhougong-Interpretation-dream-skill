@@ -1,5 +1,5 @@
 ---
-name: zhougong-dream
+name: zhougong-Interpretation-dream-skill
 version: 1.0.0
 description: >
   周公解梦技能。当用户提到做梦、梦境、解梦、周公解梦、梦到、梦见、昨晚梦、
