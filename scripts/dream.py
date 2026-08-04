@@ -66,6 +66,9 @@ def extract_words(text, dictionary):
     words = sorted(dictionary.keys(), key=len, reverse=True)
     for w in words:
         if w in text and w not in seen:
+            # 子意象去重：若已匹配的意象中包含当前词（如已匹配'大鱼'则跳过'鱼'）
+            if any(w in f for f in found):
+                continue
             found.append(w)
             seen.add(w)
     return found
